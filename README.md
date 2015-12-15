@@ -24,24 +24,29 @@
   - `out` directory for transpiled code.
   - Easier debugging.
 - The command `babel --out-dir out src` alone transpiles nothing!
-- Build with default preset: `babel --preset es2015 --out-dir out src`
-- Other presets: `babel --preset stage-0 --out-dir out src`
+- Build with default preset: `babel --presets es2015 --out-dir out src`
+- Other presets: `babel --presets stage-0 --out-dir out src`
   - Need to `npm install babel-preset-stage-0`
-- Multiple presets: `babel --preset es2015,react --out-dir out src`
+- Multiple presets: `babel --presets es2015,react --out-dir out src`
 
 ## Plugins
 
 - Presets = collection of plugins
 - Plugin = individual feature to transpile
-- Install: `npm install babel-plugin-syntax-async-functions`
-- Usage: `babel --plugin syntax-async-functions --preset es2015 --out-dir out src`
+- Install: `npm install babel-plugin-transform-async-to-generator`
+- Usage: `babel --plugins transform-async-to-generator --presets es2015 --out-dir out src`
 
 ## Custom Presets
 
 - You can create your own presets and publish it. Example at [`preset/node-preset`](preset/node-preset).
-- When including custom preset, use full name/path. i.e. `babel --preset './preset/node-preset' --out-dir out src`
+- When including custom preset, use full name/path. i.e. `babel --presets './preset/node-preset' --out-dir out src`
 
 ## .babelrc
 
-- Alternative way to include options like presets. [Example](.babelrc)
+- Alternative way to include options like presets. ([Example](.babelrc-example))
 - With that you can run command like `babel --out-dir out src` again.
+
+## Quirks
+
+- Have to update many package dependencies.
+- Be careful with misspelling command line options, i.e. `babel --preset es2015 --out-dir out src` (missing "s" in "presets")

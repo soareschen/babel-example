@@ -4,18 +4,20 @@
   "description": "Example Babel setup.",
   "main": "index.js",
   "scripts": {
-    "build": "babel --preset './preset/node-preset' --out-dir out src"
+    "build": "babel --presets './preset/node-preset' --out-dir out src"
   },
   "author": "Soares Chen",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.3.17",
+    "babel-plugin-syntax-async-functions": "^6.3.13",
+    "babel-plugin-syntax-function-bind": "^6.3.13",
 
-    "babel-plugin-transform-async-to-generator": "^6.0.14",
-    "babel-plugin-transform-es2015-destructuring": "^6.0.18",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.1.3",
-    "babel-plugin-transform-es2015-parameters": "^6.0.18",
-    "babel-plugin-transform-function-bind": "^6.0.14",
+    "babel-plugin-transform-async-to-generator": "^6.3.13",
+    "babel-plugin-transform-es2015-destructuring": "^6.3.13",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.3.13",
+    "babel-plugin-transform-es2015-parameters": "^6.3.13",
+    "babel-plugin-transform-function-bind": "^6.3.13",
 
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
