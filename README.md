@@ -3,12 +3,12 @@
 ## Node v5 ES6 Support
 
 - Full list: https://nodejs.org/en/docs/es6/
-- [Block Scoping](lib/node-native/block-scoping.js)
-- [Arrow Function](lib/node-native/arrow.js)
-- [Class](lib/node-native/class.js)
-- [Generator](lib/node-native/generator.js)
-- [Symbol](lib/node-native/symbol.js)
-- [Spread Operator](lib/node-native/spread.js)
+- [Block Scoping](src/node-native/block-scoping.js)
+- [Arrow Function](src/node-native/arrow.js)
+- [Class](src/node-native/class.js)
+- [Generator](src/node-native/generator.js)
+- [Symbol](src/node-native/symbol.js)
+- [Spread Operator](src/node-native/spread.js)
 
 ## Babel v6 Installation
 
